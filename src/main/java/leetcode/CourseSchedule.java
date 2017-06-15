@@ -29,7 +29,7 @@ import java.util.Queue;
 
 public class CourseSchedule {
 
-	// DFS topological sort
+	// dfs topological sort
 	public boolean canFinish(int numCourses, int[][] prerequisites) {
 		if (prerequisites == null || prerequisites.length == 0)
 			return true;

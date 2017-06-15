@@ -1,6 +1,8 @@
-public class Solution{
+package binarysearch;
+
+public class FindPeek {
+
     public int findPeak(int[] A) {
-        // write your code here
         int start = 0;
         int end = A.length - 1;
 

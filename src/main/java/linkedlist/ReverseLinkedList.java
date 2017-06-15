@@ -1,4 +1,6 @@
-package leetcode;
+package linkedlist;
+
+import datatype.ListNode;
 
 /*
  Reverse a singly linked list.

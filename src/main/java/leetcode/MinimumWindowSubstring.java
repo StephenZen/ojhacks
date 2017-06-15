@@ -23,7 +23,7 @@ import org.junit.Test;
 public class MinimumWindowSubstring {
 
 	/*
-	public static void main(String[] args) {
+	public static void main(string[] args) {
 		MinimumWindowSubstring m = new MinimumWindowSubstring();
 		System.out.println(m.minWindow("a", "aa"));
 	}
