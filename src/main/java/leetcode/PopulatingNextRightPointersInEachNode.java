@@ -1,5 +1,7 @@
 package leetcode;
 
+import datatype.TreeLinkNode;
+
 import java.util.ArrayList;
 import java.util.ListIterator;
 

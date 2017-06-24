@@ -27,6 +27,8 @@ package leetcode;
  4-> 5 -> 7 -> NULL
 
  */
+import datatype.TreeLinkNode;
+
 import java.util.LinkedList;
 
 public class PopulatingNextRightPointersInEachNodeII {

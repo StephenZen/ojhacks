@@ -8,6 +8,8 @@ package leetcode;
  Given 1->1->2->3->3, return 1->2->3. 
  */
 
+import datatype.ListNode;
+
 public class RemoveDuplicatesFromSortedList {
 	public ListNode deleteDuplicates(ListNode head) {
 		if (null == head)

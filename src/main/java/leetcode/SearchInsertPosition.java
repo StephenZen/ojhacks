@@ -11,9 +11,6 @@ package leetcode;
  * [1,3,5,6], 0 → 0
  */
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class SearchInsertPosition {
 	public int searchInsert(int[] nums, int target) {
 		int start = 0;
@@ -30,18 +27,6 @@ public class SearchInsertPosition {
 		return start;
 	}
 
-	@Test
-	public void testSearch() {
-		int[] testArray1 = { 1, 3, 5, 6 };
-		Assert.assertEquals(searchInsert(testArray1, 5), 2);
-		int[] testArray2 = { 1, 3, 5, 6 };
-		Assert.assertEquals(searchInsert(testArray2, 2), 1);
-		int[] testArray3 = { 1, 3, 5, 6 };
-		Assert.assertEquals(searchInsert(testArray3, 7), 4);
-		int[] testArray4 = { 1, 3, 5, 6 };
-		Assert.assertEquals(searchInsert(testArray4, 0), 0);
-
-	}
 }
 
 // 二分查找 因为是insert position 注意总是把start position 优先+1

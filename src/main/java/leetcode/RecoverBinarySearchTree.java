@@ -8,6 +8,8 @@ package leetcode;
  A solution using O(n) space is pretty straight forward. Could you devise a constant space solution? 
  */
 
+import datatype.TreeNode;
+
 public class RecoverBinarySearchTree {
 	TreeNode firstElement = null;
 	TreeNode secondElement = null;

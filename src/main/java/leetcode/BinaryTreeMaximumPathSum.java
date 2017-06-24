@@ -15,6 +15,8 @@ package leetcode;
  Return 6. 
  */
 
+import datatype.TreeNode;
+
 public class BinaryTreeMaximumPathSum {
 	int maxValue;
 

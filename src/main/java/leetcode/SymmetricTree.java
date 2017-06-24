@@ -1,5 +1,7 @@
 package leetcode;
 
+import datatype.TreeNode;
+
 /*
  Given a binary tree, isValid whether it is a mirror of itself (ie, symmetric around its center).
 

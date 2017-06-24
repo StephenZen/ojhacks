@@ -15,6 +15,8 @@ package leetcode;
  return [1,3,2]. 
  */
 
+import datatype.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 

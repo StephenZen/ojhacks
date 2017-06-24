@@ -7,6 +7,8 @@ package leetcode;
  * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4) Output: 7 -> 0 -> 8
  */
 
+import datatype.ListNode;
+
 public class AddTwoNumbers {
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		if (l1 == null && l2 == null)

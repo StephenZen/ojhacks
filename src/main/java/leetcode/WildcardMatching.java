@@ -1,8 +1,5 @@
 package leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 /*
  * 
  * Implement wildcard pattern matching with support for '?' and '*'.
@@ -49,18 +46,6 @@ public class WildcardMatching {
 		return pi == p.length();
 	}
 
-	@Test
-	public void TestIsMatch() {
-		Assert.assertFalse(isMatch("aa", "a"));
-		Assert.assertTrue(isMatch("aa", "aa"));
-		Assert.assertFalse(isMatch("aaa", "aa"));
-		Assert.assertTrue(isMatch("aa", "*"));
-		Assert.assertTrue(isMatch("aa", "a*"));
-		Assert.assertTrue(isMatch("aa", "a**"));
-		Assert.assertTrue(isMatch("ab", "?*"));
-		Assert.assertTrue(isMatch("aab", "a*b*"));
-		Assert.assertFalse(isMatch("aab", "c*a*b"));
-	}
 }
 
 // 贪心扫描 知道string 和pattern都到尾部

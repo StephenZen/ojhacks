@@ -2,9 +2,6 @@ package leetcode;
 
 import java.util.HashSet;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 /*
  Write an algorithm to determine if a number is "happy".
 
@@ -41,14 +38,6 @@ public class HappyNumber {
 
 		return false;
 
-	}
-
-	@Test
-	public void TestIsHappy() {
-		HappyNumber h = new HappyNumber();
-		Assert.assertTrue(h.isHappy(1));
-		Assert.assertTrue(h.isHappy(19));
-		Assert.assertTrue(h.isHappy(7));
 	}
 }
 

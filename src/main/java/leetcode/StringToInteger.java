@@ -1,8 +1,5 @@
 package leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 /*
  * Implement atoi to convert a string to an integer.
  * 
@@ -75,14 +72,6 @@ public class StringToInteger {
 		return (int) ret;
 	}
 
-	@Test
-	public void atoiTest() {
 
-		Assert.assertEquals(123, atoi("123"));
-		Assert.assertEquals(123, atoi(" 123 "));
-		Assert.assertEquals(0, atoi(""));
-		Assert.assertEquals(Integer.MAX_VALUE, atoi("12394394394389439"));
-
-	}
 
 }

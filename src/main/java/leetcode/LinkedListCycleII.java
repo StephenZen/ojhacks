@@ -7,6 +7,8 @@ package leetcode;
  Can you solve it without using extra space? 
  */
 
+import datatype.ListNode;
+
 import java.util.HashSet;
 
 public class LinkedListCycleII {

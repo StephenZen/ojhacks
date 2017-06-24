@@ -4,15 +4,15 @@ package datatype;
  * Created by spzhang on 6/20/17.
  */
 public class Point {
-    int x;
-    int y;
+    public int x;
+    public int y;
 
-    Point() {
+    public Point() {
         x = 0;
         y = 0;
     }
 
-    Point(int a, int b) {
+    public Point(int a, int b) {
         x = a;
         y = b;
     }

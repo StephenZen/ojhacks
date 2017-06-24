@@ -14,6 +14,8 @@ package leetcode;
  BSTIterator(root); while (i.hasNext()) v[f()] = i.next();
  */
 
+import datatype.TreeNode;
+
 import java.util.LinkedList;
 
 public class BinarySearchTreeIterator {

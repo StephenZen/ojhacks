@@ -7,6 +7,8 @@ package leetcode;
  binary tree in which the depth of the two subtrees of every node never differ by more than 1. 
  */
 
+import datatype.TreeNode;
+
 public class BalancedBinaryTree {
 	public boolean isBalanced(TreeNode root) {
 		if (root == null)

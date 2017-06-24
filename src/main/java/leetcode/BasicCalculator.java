@@ -2,8 +2,6 @@ package leetcode;
 
 import java.util.Stack;
 
-import org.junit.Assert;
-import org.junit.Test;
 
 /*
  * Implement a basic calculator to evaluate a simple expression string.
@@ -71,11 +69,5 @@ public class BasicCalculator {
 		return ret;
 	}
 
-	@Test
-	public void test() {
-		Assert.assertEquals(23, calculate("(1+(4+5+2)-3)+(6+8)"));
-		Assert.assertEquals(3, calculate("2-(5-6)"));
-		Assert.assertEquals(3, calculate(" 3"));
-		Assert.assertEquals(30 , calculate(" 30"));
-	}
+
 }

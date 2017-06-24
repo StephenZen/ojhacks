@@ -8,6 +8,8 @@ package leetcode;
  return 4->5->1->2->3->NULL.
  */
 
+import datatype.ListNode;
+
 public class SubmissionDetails {
 	public ListNode rotateRight(ListNode head, int n) {
 		if (head == null)

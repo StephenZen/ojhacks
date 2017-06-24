@@ -1,8 +1,11 @@
-    /** 
-     * param A : an integer sorted array
-     * param target :  an integer to be inserted
-     * return : an integer
-     */
+package binarysearch;
+
+/**
+ * param A : an integer sorted array
+ * param target :  an integer to be inserted
+ * return : an integer
+ */
+public class SearchInsertPosition {
     public int searchInsert(int[] A, int target) {
         // write your code here
         if (A == null || A.length == 0) {
@@ -29,5 +32,6 @@
         } else {
             return end + 1;
         }
-        
+
     }
+}

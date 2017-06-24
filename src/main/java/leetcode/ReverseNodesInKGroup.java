@@ -18,6 +18,8 @@ package leetcode;
  * For k = 3, you should return: 3->2->1->4->5
  */
 
+import datatype.ListNode;
+
 public class ReverseNodesInKGroup {
 	public ListNode reverseKGroup(ListNode head, int k) {
 		ListNode dummy = new ListNode(0);

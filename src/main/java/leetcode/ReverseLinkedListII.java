@@ -13,6 +13,8 @@ package leetcode;
  1 ≤ m ≤ n ≤ length of list. 
  */
 
+import datatype.ListNode;
+
 public class ReverseLinkedListII {
 	public ListNode reverseBetween(ListNode head, int m, int n) {
 		if (m == n)

@@ -1,5 +1,7 @@
 package leetcode;
 
+import datatype.Point;
+
 import java.util.HashMap;
 
 public class MaxPointsOnALine {

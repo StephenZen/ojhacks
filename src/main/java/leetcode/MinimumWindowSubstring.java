@@ -1,9 +1,5 @@
 package leetcode;
 
-import java.util.HashMap;
-
-import org.junit.Assert;
-import org.junit.Test;
 
 /*
  Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
@@ -19,6 +15,8 @@ import org.junit.Test;
 
  If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S. 
  */
+
+import java.util.HashMap;
 
 public class MinimumWindowSubstring {
 
@@ -71,12 +69,6 @@ public class MinimumWindowSubstring {
 		return S.substring(minStart, minStart + minLen);
 	}
 	
-	@Test
-	public void minWindowTest(){
-		String S = "fjebieifeislie";
-		String T = "fesl";
-		Assert.assertEquals("feisl", minWindow(S, T));
-	}
 
 }
 

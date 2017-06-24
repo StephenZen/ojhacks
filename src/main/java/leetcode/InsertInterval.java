@@ -13,6 +13,8 @@ package leetcode;
 
  This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10]. 
  */
+import datatype.Interval;
+
 import java.util.ArrayList;
 import java.util.List;
 

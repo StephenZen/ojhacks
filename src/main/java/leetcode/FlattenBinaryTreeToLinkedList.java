@@ -27,6 +27,8 @@ package leetcode;
  6
 
  */
+import datatype.TreeNode;
+
 import java.util.Stack;
 
 public class FlattenBinaryTreeToLinkedList {

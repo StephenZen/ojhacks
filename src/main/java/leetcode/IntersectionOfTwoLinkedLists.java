@@ -22,6 +22,8 @@ package leetcode;
  Your code should preferably run in O(n) time and use only O(1) memory.
  */
 
+import datatype.ListNode;
+
 public class IntersectionOfTwoLinkedLists {
 	public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 		int n = 0, m = 0;

@@ -14,6 +14,8 @@ package leetcode;
  Try to do this in one pass. 
  */
 
+import datatype.ListNode;
+
 public class RemoveNthNodeFromEndOfList {
 	
 	public ListNode removeNthFromEnd(ListNode head, int n) {

@@ -1,8 +1,5 @@
 package leetcode;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 /*
  * Implement regular expression matching with support for '.' and '*'.
  * 
@@ -60,11 +57,5 @@ public class RegularExpressionMatching {
 
 	}
 
-	@Test
-	public void test() {
-		Assert.assertTrue(", **", isMatch("", "**"));
-		Assert.assertTrue("aa, a*", isMatch("aa", "a*"));
-		Assert.assertTrue("aa, a.", isMatch("aa", "a."));
-		Assert.assertTrue("aab, c*a*b", isMatch("aab", "c*a*b"));
-	}
+
 }

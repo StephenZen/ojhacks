@@ -3,9 +3,6 @@ package leetcode;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class MyStack {
 
 	Queue q = new ArrayDeque();
@@ -48,16 +45,5 @@ public class MyStack {
 	// Return whether the stack is empty.
 	public boolean empty() {
 		return q.isEmpty();
-	}
-
-	@Test
-	public void TestStack() {
-		MyStack s = new MyStack();
-		s.push(1);
-		s.push(2);
-		s.push(3);
-		Assert.assertEquals(3, s.top());
-		s.pop();
-		Assert.assertEquals(2, s.top());
 	}
 }

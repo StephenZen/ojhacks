@@ -7,6 +7,8 @@ package leetcode;
  You may assume that duplicates do not exist in the tree.
  */
 
+import datatype.TreeNode;
+
 public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
 	public TreeNode buildTree(int[] inorder, int[] postorder) {
 		if (inorder == null || postorder == null || inorder.length == 0)

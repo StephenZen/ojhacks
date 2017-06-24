@@ -6,6 +6,8 @@ package leetcode;
  Return a deep copy of the list. 
  */
 
+import datatype.RandomListNode;
+
 import java.util.HashMap;
 import java.util.Map;
 

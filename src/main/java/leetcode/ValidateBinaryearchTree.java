@@ -11,6 +11,8 @@ package leetcode;
 
  */
 
+import datatype.TreeNode;
+
 public class ValidateBinaryearchTree {
 	public boolean isValidBST(TreeNode root) {
 		if (root == null)

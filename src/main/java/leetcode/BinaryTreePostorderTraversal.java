@@ -17,6 +17,8 @@ package leetcode;
  Note: Recursive solution is trivial, could you do it iteratively?
  */
 
+import datatype.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

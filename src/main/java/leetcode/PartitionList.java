@@ -10,6 +10,8 @@ package leetcode;
  return 1->2->2->4->3->5.
  */
 
+import datatype.ListNode;
+
 public class PartitionList {
 	public ListNode partition(ListNode head, int x) {
 		if (head == null)

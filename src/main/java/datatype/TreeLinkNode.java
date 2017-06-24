@@ -5,7 +5,7 @@ package datatype;
  */
 public class TreeLinkNode {
     int val;
-    TreeLinkNode left, right, next;
+    public TreeLinkNode left, right, next;
 
     TreeLinkNode(int x) {
         val = x;

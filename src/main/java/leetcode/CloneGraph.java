@@ -3,6 +3,8 @@ package leetcode;
 /*
  Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
  */
+import datatype.UndirectedGraphNode;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

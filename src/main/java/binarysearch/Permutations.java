@@ -6,13 +6,13 @@ import java.util.List;
 public class Permutations{
     public List<List<Integer>> permute(int[] nums) {
 
-        ArrayList<List<Integer>> result = new ArrayList<>();
+        ArrayList<List<Integer>> result = new ArrayList<List<Integer>>();
 
         if(null == nums){
             return result;
         }
 
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<Integer>();
         permuteHelper(result, list, nums);
         return result;
 
@@ -22,7 +22,7 @@ public class Permutations{
                                ArrayList<Integer> list,
                                int[] nums){
         if(list.size() == nums.length){
-            result.add(new ArrayList<>(list));
+            result.add(new ArrayList<Integer>(list));
             return;
         }
         for(int i = 0; i < nums.length; i++){

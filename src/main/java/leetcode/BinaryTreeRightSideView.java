@@ -14,6 +14,8 @@ package leetcode;
 
  You should return [1, 3, 4]. 
  */
+import datatype.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

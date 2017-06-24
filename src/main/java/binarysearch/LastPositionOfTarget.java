@@ -1,8 +1,9 @@
-    /**
-     * @param nums: An integer array sorted in ascending order
-     * @param target: An integer
-     * @return an integer
-     */
+/**
+ * @param nums:   An integer array sorted in ascending order
+ * @param target: An integer
+ * @return an integer
+ */
+public class LastPositionOfTarget {
     public int lastPosition(int[] nums, int target) {
         // Write your code here
         if (nums == null || nums.length == 0) {
@@ -32,5 +33,6 @@
         }
 
         return -1;
-        
+
     }
+}

@@ -18,6 +18,8 @@ package leetcode;
  [5,8,4,5]
  ]
  */
+import datatype.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -8,6 +8,8 @@ package leetcode;
  return [1,6],[8,10],[15,18]. 
  */
 
+import datatype.Interval;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

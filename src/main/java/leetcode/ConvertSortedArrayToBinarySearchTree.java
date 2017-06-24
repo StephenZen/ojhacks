@@ -4,6 +4,8 @@ package leetcode;
 Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
  */
 
+import datatype.TreeNode;
+
 public class ConvertSortedArrayToBinarySearchTree {
     public TreeNode sortedArrayToBST(int[] num) {
         int n = num.length - 1;

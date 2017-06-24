@@ -1,9 +1,4 @@
 package leetcode;
-
-
-import org.junit.Assert;
-import org.junit.Test;
-
 /*
  * Reverse digits of an integer.
  * 
@@ -25,11 +20,5 @@ public class ReverseInteger {
 		}
 
 		return ret;
-	}
-
-	@Test
-	public void testNegative() {
-		int i = -321;
-		Assert.assertEquals(-123, reverse(i));
 	}
 }

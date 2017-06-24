@@ -1,20 +1,24 @@
-    /**
-     * @param matrix, a list of lists of integers
-     * @param target, an integer
-     * @return a boolean, indicate whether matrix contains target
-     */
+package binarysearch;
+
+/**
+ * @param matrix, a list of lists of integers
+ * @param target, an integer
+ * @return a boolean, indicate whether matrix contains target
+ */
+public class SearchA2DMatrix {
+
     public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix == null) {
             return false;
         }
 
         if (matrix.length == 0 || matrix[0].length == 0) {
-            return false;    
+            return false;
         }
-        
+
         int rowLength = matrix.length;
         int columnLength = matrix[0].length;
-        
+
         if (rowLength == 0 || columnLength == 0) {
             return false;
         }
@@ -44,3 +48,4 @@
 
         return false;
     }
+}

@@ -5,6 +5,8 @@ package leetcode;
  * describe its complexity.
  */
 
+import datatype.ListNode;
+
 import java.util.Arrays;
 
 public class MergeKSortedLists {

@@ -6,6 +6,8 @@ package leetcode;
  The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
  */
 
+import datatype.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 

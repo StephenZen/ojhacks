@@ -5,8 +5,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.junit.Assert;
-import org.junit.Test;
+
 
 public class InsertSort {
 
@@ -27,16 +26,5 @@ public class InsertSort {
 		return sortedList;
 	}
 
-	@Test
-	public void insertSortTest() {
 
-		List<Integer> input = new ArrayList<Integer>();
-		input.addAll(Arrays.asList(4, 2, 1, 3));
-		List<Integer> output = new ArrayList<Integer>();
-		output.addAll(Arrays.asList(1, 2, 3, 4));
-
-		List<Integer> sorted = insertSort(input);
-
-		Assert.assertArrayEquals(sorted.toArray(), output.toArray());
-	}
 }

@@ -1,5 +1,7 @@
 package leetcode;
 
+import datatype.ListNode;
+
 /*
  Sort a linked list using insertion sort.
  */
