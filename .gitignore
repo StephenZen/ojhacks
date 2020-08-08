@@ -5,3 +5,5 @@ bin/
 .classpath
 .DS_Store
 AlgorithmStudy.iml
+/target/
+.settings

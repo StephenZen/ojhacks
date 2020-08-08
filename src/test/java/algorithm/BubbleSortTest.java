@@ -3,6 +3,8 @@ package algorithm;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.zsp1987.leetcode.algorithm.BubbleSort;
+
 /**
  * Created by Shaopeng Zhang on 6/13/2017.
  */
