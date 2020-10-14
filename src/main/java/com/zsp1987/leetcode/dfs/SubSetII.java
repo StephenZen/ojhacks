@@ -3,14 +3,14 @@ package com.zsp1987.leetcode.dfs;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class SubSetII{
+public class SubSetII {
     /**
      * @param nums: A set of numbers.
      * @return: A list of lists. All valid subsets.
      */
     public ArrayList<ArrayList<Integer>> subsetsWithDup(int[] nums) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
-        if(null==nums || nums.length == 0){
+        if (null == nums || nums.length == 0) {
             return result;
         }
 
@@ -20,14 +20,11 @@ public class SubSetII{
         return result;
     }
 
-    private void helper(ArrayList<ArrayList<Integer>> result,
-                        ArrayList<Integer> subset,
-                        int[] nums,
-                        int pos){
-        result.add(new ArrayList(subset));
+    private void helper(ArrayList<ArrayList<Integer>> result, ArrayList<Integer> subset, int[] nums, int pos) {
+        result.add(new ArrayList<>(subset));
 
-        for(int i = pos; i < nums.length; i++){
-            if(i > pos && nums[i] == nums[i-1] ){
+        for (int i = pos; i < nums.length; i++) {
+            if (i > pos && nums[i] == nums[i - 1]) {
                 continue;
             }
             subset.add(nums[i]);

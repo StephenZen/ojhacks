@@ -1,7 +1,5 @@
 package com.zsp1987.leetcode.algorithm;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 

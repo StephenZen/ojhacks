@@ -14,8 +14,6 @@ package com.zsp1987.leetcode;
  */
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -53,8 +51,8 @@ public class WordBreakII {
 				int size = ret.size();
 				list.add(cur);
 				process(s, dict, lvl + 1, lvl + 1);
-				if (ret.size() == size) {		// 根�?�结果的长度�?�化,
-												// 判断之�?�是�?��?�能
+				if (ret.size() == size) {		// 根�?�结果的长度�?�化,
+												// 判断之�?�是�?��?�能
 					p[lvl + 1] = false;
 				}
 				list.remove(list.size() - 1);
@@ -65,4 +63,4 @@ public class WordBreakII {
 
 }
 
-// 回溯 , 改进的方法是在调用回溯之�?检查之�?是�?�算过, 如果算过直接剪�?
+// 回溯 , 改进的方法是在调用回溯之�?检查之�?是�?�算过, 如果算过直接剪�?

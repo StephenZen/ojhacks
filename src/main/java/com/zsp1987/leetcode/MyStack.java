@@ -3,18 +3,18 @@ package com.zsp1987.leetcode;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-public class MyStack {
+public class MyStack<E> {
 
-	Queue q = new ArrayDeque();
+	Queue<E> q = new ArrayDeque<E>();
 
 	// Push element x onto stack.
-	public void push(int x) {
+	public void push(E x) {
 		q.offer(x);
 	}
 
 	// Removes the element on top of the stack.
 	public void pop() {
-		Queue q2 = new ArrayDeque();
+		Queue<E> q2 = new ArrayDeque<E>();
 		int n = q.size();
 		for (int i = 0; i < n - 1; i++) {
 			q2.offer(q.poll());
@@ -26,15 +26,15 @@ public class MyStack {
 	}
 
 	// Get the top element.
-	public int top() {
-		Queue q2 = new ArrayDeque();
+	public E top() {
+		Queue<E> q2 = new ArrayDeque<E>();
 		int n = q.size();
 		for (int i = 0; i < n - 1; i++) {
-			int temp = (Integer) q.poll();
+			E temp = q.poll();
 			q2.offer(temp);
 		}
 
-		int top = (Integer) q.peek();
+		E top = q.peek();
 		q2.offer(q.poll());
 		while (!q2.isEmpty()) {
 			q.offer(q2.poll());
