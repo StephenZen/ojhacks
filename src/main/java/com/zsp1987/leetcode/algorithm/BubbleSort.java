@@ -16,5 +16,4 @@ public class BubbleSort {
             }
         } while (switched);
     }
-
 }

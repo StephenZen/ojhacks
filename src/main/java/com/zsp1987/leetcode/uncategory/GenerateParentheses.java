@@ -1,8 +1,8 @@
 package com.zsp1987.leetcode.uncategory;
 
 /*
- * Given n pairs of parentheses, write a function to generate all combinations
- * of well-formed parentheses.
+ * Given n pairs of parentheses, write a function to generate all combinations of well-formed
+ * parentheses.
  * 
  * For example, given n = 3, a solution set is:
  * 
@@ -25,8 +25,7 @@ public class GenerateParentheses {
 
 	}
 
-	void proc(char[] result, int pos, int l, int r, int n,
-			List<String> resultList) {
+	void proc(char[] result, int pos, int l, int r, int n, List<String> resultList) {
 		if (pos == 2 * n) { // final point!!
 			String vaild = new String(result);
 			if (!resultList.contains(vaild)) {
