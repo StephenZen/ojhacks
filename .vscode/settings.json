@@ -1,5 +1,3 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive",
-    "java.checkstyle.configuration": "/sun_checks.xml",
-    "java.checkstyle.version": "8.18"
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

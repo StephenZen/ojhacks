@@ -1,13 +1,10 @@
 package com.zsp1987.leetcode.datatype;
 
-/**
- * Created by spzhang on 6/20/17.
- */
-public class TreeLinkNode {
-    int val;
-    public TreeLinkNode left, right, next;
+public class TreeLinkNode<T> {
+    T val;
+    public TreeLinkNode<T> left, right, next;
 
-    TreeLinkNode(int x) {
+    TreeLinkNode(T x) {
         val = x;
     }
 }

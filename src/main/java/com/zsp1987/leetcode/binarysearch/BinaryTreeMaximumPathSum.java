@@ -13,14 +13,15 @@ public class BinaryTreeMaximumPathSum {
         }
     }
 
-    public int maxPathSum(TreeNode root) {
+    public int maxPathSum(TreeNode<Integer> root) {
         // write your code here
         ResultType result = helper(root);
         return result.maxPath;
     }
 
-    private ResultType helper(TreeNode node) {
+    private ResultType helper(TreeNode<Integer> node) {
         int maxPath, singlePath;
+        
         if (node.left == null && node.right == null) {
             return new ResultType(node.val, node.val);
         } else if (node.left == null) {
@@ -47,6 +48,3 @@ public class BinaryTreeMaximumPathSum {
 
     }
 }
-
-
-

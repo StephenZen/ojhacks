@@ -1,12 +1,9 @@
 package com.zsp1987.leetcode.datatype;
 
-/**
- * Created by Shaopeng Zhang on 6/15/2017.
- */
-public class ListNode {
-    public int val;
-    public ListNode next;
-    public ListNode(int x) {
+public class ListNode<T> {
+    public T val;
+    public ListNode<T> next;
+    public ListNode(T x) {
         val = x;
     }
 }

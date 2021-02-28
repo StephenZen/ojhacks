@@ -3,15 +3,12 @@ package com.zsp1987.leetcode.datatype;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by spzhang on 6/20/17.
- */
-public class UndirectedGraphNode {
-    public int label;
-    public List<UndirectedGraphNode> neighbors;
+public class UndirectedGraphNode<T> {
+    public T label;
+    public List<UndirectedGraphNode<T>> neighbors;
 
-    public UndirectedGraphNode(int x) {
+    public UndirectedGraphNode(T x) {
         label = x;
-        neighbors = new ArrayList<UndirectedGraphNode>();
+        neighbors = new ArrayList<UndirectedGraphNode<T>>();
     }
 }

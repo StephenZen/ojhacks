@@ -1,14 +1,11 @@
 package com.zsp1987.leetcode.datatype;
 
-/**
- * Created by spzhang on 6/20/17.
- */
-public class RandomListNode {
+public class RandomListNode<T> {
 
-    public int label;
-    public RandomListNode next, random;
+    public T label;
+    public RandomListNode<T> next, random;
 
-    public RandomListNode(int x) {
+    public RandomListNode(T x) {
         this.label = x;
     }
 }
