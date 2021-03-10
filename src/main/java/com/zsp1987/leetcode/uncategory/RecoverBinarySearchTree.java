@@ -3,11 +3,11 @@ package com.zsp1987.leetcode.uncategory;
 import com.zsp1987.leetcode.datatype.TreeNode;
 
 public class RecoverBinarySearchTree {
-	TreeNode firstElement = null;
-	TreeNode secondElement = null;
-	TreeNode prevElement = new TreeNode(Integer.MIN_VALUE);
+	TreeNode<Integer> firstElement = null;
+	TreeNode<Integer> secondElement = null;
+	TreeNode<Integer> prevElement = new TreeNode<>(Integer.MIN_VALUE);
 
-	public void recoverTree(TreeNode root) {
+	public void recoverTree(TreeNode<Integer> root) {
 
 		// In order traversal to find the two elements
 		traverse(root);
@@ -18,7 +18,7 @@ public class RecoverBinarySearchTree {
 		secondElement.val = temp;
 	}
 
-	private void traverse(TreeNode root) {
+	private void traverse(TreeNode<Integer> root) {
 
 		if (root == null)
 			return;
@@ -44,5 +44,3 @@ public class RecoverBinarySearchTree {
 		traverse(root.right);
 	}
 }
-
-// dfs �??历, �?�现当�?元素比父元素大的时候 说明父元素有问题, 记录两个问题元素, 交�?�其对应数值

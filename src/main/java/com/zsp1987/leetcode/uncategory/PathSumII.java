@@ -8,22 +8,22 @@ import com.zsp1987.leetcode.datatype.TreeNode;
 public class PathSumII {
 	List<List<Integer>> result = new ArrayList<List<Integer>>();
 
-	public List<List<Integer>> pathSum(TreeNode root, int sum) {
+	public List<List<Integer>> pathSum(TreeNode<Integer> root, int sum) {
 		if (root == null)
 			return result;
-		List<Integer> list = new ArrayList<Integer>();
+		List<Integer> list = new ArrayList<>();
 		subsets(root, list, 0, sum);
 		return result;
 
 	}
 
-	void subsets(TreeNode node, List<Integer> list, int cursum, int sum) {
+	void subsets(TreeNode<Integer> node, List<Integer> list, int cursum, int sum) {
 		List<Integer> listN = new ArrayList<Integer>(list);
 		listN.add(node.val);
 		cursum += node.val;
 		if (node.left == null && node.right == null) {
 			if (cursum == sum) {
-				List<Integer> newList = new ArrayList<Integer>(listN);
+				List<Integer> newList = new ArrayList<>(listN);
 				result.add(newList);
 			}
 			return;
@@ -35,5 +35,3 @@ public class PathSumII {
 		}
 	}
 }
-
-// 跟pathsum 一样的�?路dfs�??历 �?�?�点�?层多加一个列表�?存当�?队列

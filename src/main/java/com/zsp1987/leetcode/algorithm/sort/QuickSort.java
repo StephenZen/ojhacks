@@ -1,4 +1,4 @@
-package com.zsp1987.leetcode.algorithm.sort
+package com.zsp1987.leetcode.algorithm.sort;
 
 import java.util.ArrayList;
 import java.util.List;

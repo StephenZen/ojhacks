@@ -24,9 +24,9 @@ import com.zsp1987.leetcode.datatype.TreeNode;
  Return the sum = 12 + 13 = 25. 
  */
 public class SumRootToLeafNumbers {
-	public int sumNumbers(TreeNode root) {
+	public int sumNumbers(TreeNode<Integer> root) {
 		int sum = 0;
-		List<Integer> result = new ArrayList<Integer>();
+		List<Integer> result = new ArrayList<>();
 		if (root == null)
 			return sum;
 		build(result, 0, root);
@@ -36,7 +36,7 @@ public class SumRootToLeafNumbers {
 		return sum;
 	}
 
-	void build(List<Integer> result, int pre, TreeNode node) {
+	void build(List<Integer> result, int pre, TreeNode<Integer> node) {
 		if (node.left == null && node.right == null) {
 			result.add(pre * 10 + node.val);
 			return;
@@ -52,4 +52,4 @@ public class SumRootToLeafNumbers {
 	}
 }
 
-// dfs记录根到�?�的路径, 将数字记录到列表中, 最�?�相加
+// dfs记录根到�?�的路径, 将数字记录到列表中, 最�?�相加

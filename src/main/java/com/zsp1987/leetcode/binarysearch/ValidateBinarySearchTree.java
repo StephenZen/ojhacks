@@ -15,12 +15,12 @@ public class ValidateBinarySearchTree {
         }
     }
 
-    public boolean isValidBST(TreeNode root) {
+    public boolean isValidBST(TreeNode<Integer> root) {
         ResultInfo result = validateHelper(root);
         return result.isValid;
     }
 
-    public ResultInfo validateHelper(TreeNode node) {
+    public ResultInfo validateHelper(TreeNode<Integer> node) {
         if (node == null) {
             return new ResultInfo(true, Integer.MIN_VALUE, Integer.MAX_VALUE);
         }

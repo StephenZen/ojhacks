@@ -24,7 +24,7 @@ import com.zsp1987.leetcode.datatype.TreeNode;
  */
 
 public class BinaryTreePreorderTraversal {
-	public List<Integer> preorderTraversalOld(TreeNode root) {
+	public List<Integer> preorderTraversalOld(TreeNode<Integer> root) {
 		List<Integer> list = new ArrayList<Integer>();
 		if (root == null)
 			return list;
@@ -32,7 +32,7 @@ public class BinaryTreePreorderTraversal {
 
 	}
 
-	public void visit(TreeNode node, List<Integer> list) {
+	public void visit(TreeNode<Integer> node, List<Integer> list) {
 		list.add(node.val);
 		if (null != node.left) {
 			visit(node.left, list);
@@ -42,23 +42,23 @@ public class BinaryTreePreorderTraversal {
 		}
 
 	}
-	public List<Integer> preorderTraversal(TreeNode root) {
+	public List<Integer> preorderTraversal(TreeNode<Integer> root) {
 
-        LinkedList<TreeNode> temp = new LinkedList<TreeNode>();
-        LinkedList<TreeNode> rResult = new LinkedList<TreeNode>();		// reverse result
+        LinkedList<TreeNode<Integer>> temp = new LinkedList<>();
+        LinkedList<TreeNode<Integer>> rResult = new LinkedList<>();		// reverse result
         List<Integer> result = new ArrayList<Integer>();
         if (root == null)
             return result;
         temp.add(root);
         while (temp.size() != 0) {
-            TreeNode node = temp.pop();
+            TreeNode<Integer> node = temp.pop();
             rResult.add(node);
             if (node.right != null) {
-                TreeNode nodeR = node.right;
+                TreeNode<Integer> nodeR = node.right;
                 temp.push(nodeR);
             }
             if (node.left != null) {
-                TreeNode nodeL = node.left;
+                TreeNode<Integer> nodeL = node.left;
                 temp.push(nodeL);
             }
 
@@ -71,4 +71,4 @@ public class BinaryTreePreorderTraversal {
 	}
 }
 
-// preorder 就先加节点 �?加左�?�
+// preorder 就先加节点 �?加左�?�

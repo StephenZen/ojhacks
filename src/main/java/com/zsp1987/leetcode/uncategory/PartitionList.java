@@ -3,10 +3,10 @@ package com.zsp1987.leetcode.uncategory;
 import com.zsp1987.leetcode.datatype.ListNode;
 
 public class PartitionList {
-	public ListNode partition(ListNode head, int x) {
+	public ListNode<Integer> partition(ListNode<Integer> head, int x) {
 		if (head == null)
 			return head;
-		ListNode cur, left, right, lefthead, righthead;
+		ListNode<Integer> cur, left, right, lefthead, righthead;
 
 		cur = head;
 		left = null;
@@ -48,5 +48,3 @@ public class PartitionList {
 
 	}
 }
-
-//建立两个�?链 左边�? �?�边大 最走连接起�?�两个链表

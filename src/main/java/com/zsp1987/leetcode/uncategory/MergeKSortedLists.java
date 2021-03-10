@@ -5,7 +5,7 @@ import java.util.Arrays;
 import com.zsp1987.leetcode.datatype.ListNode;
 
 public class MergeKSortedLists {
-	public ListNode mergeKLists(ListNode[] lists) {
+	public ListNode<Integer> mergeKLists(ListNode<Integer>[] lists) {
 		int n = lists.length;
 		if (lists == null || n == 0)
 			return null;
@@ -18,9 +18,9 @@ public class MergeKSortedLists {
 				mergeKLists(Arrays.copyOfRange(lists, i, n)));
 	}
 
-	ListNode merge(ListNode list1, ListNode list2) {
-		ListNode cur = new ListNode(0);
-		ListNode hd = cur;
+	ListNode<Integer> merge(ListNode<Integer> list1, ListNode<Integer> list2) {
+		ListNode<Integer> cur = new ListNode<>(0);
+		ListNode<Integer> hd = cur;
 
 		while (list1 != null && list2 != null) {
 			if (list1.val < list2.val) {
@@ -42,7 +42,3 @@ public class MergeKSortedLists {
 		return hd.next;
 	}
 }
-
-/*
- * i, j将list对�?�分了 divide 到分到最�?的�?�元 �?么是 0， 1， 2 三中的一个情况， 然�?�用merge conquar
- */

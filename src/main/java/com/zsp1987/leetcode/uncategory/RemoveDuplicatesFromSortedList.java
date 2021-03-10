@@ -3,10 +3,10 @@ package com.zsp1987.leetcode.uncategory;
 import com.zsp1987.leetcode.datatype.ListNode;
 
 public class RemoveDuplicatesFromSortedList {
-	public ListNode deleteDuplicates(ListNode head) {
+	public ListNode<Integer> deleteDuplicates(ListNode<Integer> head) {
 		if (null == head)
 			return head;
-		ListNode current = head;
+		ListNode<Integer> current = head;
 		int val;
 		val = current.val;
 		while (null != current.next) {

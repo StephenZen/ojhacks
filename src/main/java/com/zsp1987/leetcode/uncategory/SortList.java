@@ -6,23 +6,23 @@ import com.zsp1987.leetcode.datatype.ListNode;
  Sort a linked list in O(n log n) time using constant space complexity.
  */
 public class SortList {
-	public ListNode sortList(ListNode head) {
-		if (head == null || head.next == null)      //list size == 0 or == 1
+	public ListNode<Integer> sortList(ListNode<Integer> head) {
+		if (head == null || head.next == null) // list size == 0 or == 1
 			return head;
-		ListNode fast = head.next.next;
-		ListNode slow = head;
+		ListNode<Integer> fast = head.next.next;
+		ListNode<Integer> slow = head;
 		while (fast != null && fast.next != null) {
 			slow = slow.next;
 			fast = fast.next.next;
 		}
-		ListNode rightStart = sortList(slow.next);
+		ListNode<Integer> rightStart = sortList(slow.next);
 		slow.next = null;
 		return merge(sortList(head), rightStart);
 	}
 
-	public ListNode merge(ListNode h1, ListNode h2) {
-		ListNode hn = new ListNode(Integer.MIN_VALUE);
-		ListNode cur = hn;
+	public ListNode<Integer> merge(ListNode<Integer> h1, ListNode<Integer> h2) {
+		ListNode<Integer> hn = new ListNode<>(Integer.MIN_VALUE);
+		ListNode<Integer> cur = hn;
 		while (h1 != null && h2 != null) {
 			if (h1.val < h2.val) {
 				cur.next = h1;

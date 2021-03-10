@@ -5,13 +5,13 @@ import com.zsp1987.leetcode.datatype.TreeNode;
 public class BinaryTreeMaximumPathSum {
 	int maxValue;
 
-	public int maxPathSum(TreeNode root) {
+	public int maxPathSum(TreeNode<Integer> root) {
 		maxValue = Integer.MIN_VALUE;
 		maxPathDown(root);
 		return maxValue;
 	}
 
-	private int maxPathDown(TreeNode node) {
+	private int maxPathDown(TreeNode<Integer> node) {
 		if (node == null)
 			return 0;
 		int left = Math.max(0, maxPathDown(node.left));		//get left side max branch
@@ -21,4 +21,4 @@ public class BinaryTreeMaximumPathSum {
 	}
 }
 
-// dfs 全局�?��?�?�控制最大值 超过最大值就记录 注�? 如果左�?��?的加和是负值的�?就用�?弃并�?�0
+// dfs 全局�?��?�?�控制最大值 超过最大值就记录 注�? 如果左�?��?的加和是负值的�?就用�?弃并�?�0

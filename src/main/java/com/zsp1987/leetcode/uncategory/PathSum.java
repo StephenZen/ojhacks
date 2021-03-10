@@ -3,7 +3,7 @@ package com.zsp1987.leetcode.uncategory;
 import com.zsp1987.leetcode.datatype.TreeNode;
 
 public class PathSum {
-	public boolean hasPathSum(TreeNode root, int sum) {
+	public boolean hasPathSum(TreeNode<Integer> root, int sum) {
 
 		if (root == null)
 			return false;
@@ -11,7 +11,7 @@ public class PathSum {
 		return findPath(0, root, sum);
 	}
 
-	boolean findPath(int pre, TreeNode node, int sum) {
+	boolean findPath(int pre, TreeNode<Integer>  node, int sum) {
 		if (node.left == null & node.right == null) {
 			if (pre + node.val == sum)
 				return true;
@@ -29,5 +29,3 @@ public class PathSum {
 		}
 	}
 }
-
-// 递归调用 dfs �?留parent的sum值 到�?�节点判定, 返回左�?��?的结果的或值

@@ -6,9 +6,9 @@ import java.util.List;
 import com.zsp1987.leetcode.datatype.TreeNode;
 
 public class BinaryTreeInorderTraversal {
-	public List<Integer> inorderTraversal(TreeNode root) {
+	public List<Integer> inorderTraversal(TreeNode<Integer> root) {
 
-		List<Integer> list = new ArrayList<Integer>();
+		List<Integer> list = new ArrayList<>();
 		if (root == null)
 			return list;
 		visit(root, list);
@@ -16,7 +16,7 @@ public class BinaryTreeInorderTraversal {
 
 	}
 
-	public void visit(TreeNode node, List<Integer> list) {
+	public void visit(TreeNode<Integer> node, List<Integer> list) {
 
 		if (null != node.left) {
 			visit(node.left, list);
@@ -29,4 +29,4 @@ public class BinaryTreeInorderTraversal {
 	}
 }
 
-// 递归 中间�?�入
+// 递归 中间�?�入

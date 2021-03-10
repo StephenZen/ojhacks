@@ -6,17 +6,17 @@ import com.zsp1987.leetcode.datatype.ListNode;
  Sort a linked list using insertion sort.
  */
 public class InsertionSortList {
-    public ListNode insertionSortList(ListNode head) {
+    public ListNode<Integer> insertionSortList(ListNode<Integer> head) {
         if (head == null) return null;
         if (head.next == null) return head;
-        ListNode pre = head, cur = head.next;
+        ListNode<Integer> pre = head, cur = head.next;
 
         int count = 1;
         outter:
         while (cur != null) {
 
-            ListNode node = head;
-            ListNode prenode = null;
+            ListNode<Integer> node = head;
+            ListNode<Integer> prenode = null;
 
             for (int i = 0; i < count; i++) {
                 if (cur.val < node.val) {
@@ -43,6 +43,3 @@ public class InsertionSortList {
         return head;
     }
 }
-
-// 两个标记 一标记�? 一标记当�?, �?次都将当�?的与排�?好的array作比较�?�入
-// 注�?的是head的�?置 是�?�需�?�?�化

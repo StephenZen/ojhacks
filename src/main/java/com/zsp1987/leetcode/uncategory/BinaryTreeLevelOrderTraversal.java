@@ -6,7 +6,7 @@ import java.util.List;
 import com.zsp1987.leetcode.datatype.TreeNode;
 
 public class BinaryTreeLevelOrderTraversal {
-	public List<List<Integer>> levelOrder(TreeNode root) {
+	public List<List<Integer>> levelOrder(TreeNode<Integer> root) {
 		ArrayList<List<Integer>> result = new ArrayList<List<Integer>>();
 		if (root == null)
 			return result;
@@ -15,7 +15,7 @@ public class BinaryTreeLevelOrderTraversal {
 
 	}
 
-	void build(List<List<Integer>> result, int lvl, TreeNode node) {
+	void build(List<List<Integer>> result, int lvl, TreeNode<Integer> node) {
 		int n = result.size();
 		List<Integer> lvlList;
 		if (lvl > n - 1) {
@@ -34,4 +34,4 @@ public class BinaryTreeLevelOrderTraversal {
 	}
 }
 
-// �??历�?层 用全局�?��?记录结果 用lvl记录层高 若当�?lvl的层高大于全局�?��?的长度 就生�?新层, �?�则就�?�出当�?lvl对应的列表 往里�?�填充
+// �??历�?层 用全局�?��?记录结果 用lvl记录层高 若当�?lvl的层高大于全局�?��?的长度 就生�?新层, �?�则就�?�出当�?lvl对应的列表 往里�?�填充
