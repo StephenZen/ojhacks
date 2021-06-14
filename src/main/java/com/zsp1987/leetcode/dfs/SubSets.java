@@ -2,7 +2,9 @@ package com.zsp1987.leetcode.dfs;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import org.springframework.stereotype.Service;
 
+@Service
 public class SubSets {
     /**
      * @param S: A set of numbers.

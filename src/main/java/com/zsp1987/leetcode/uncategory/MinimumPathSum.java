@@ -1,12 +1,8 @@
 package com.zsp1987.leetcode.uncategory;
 
-/*
- Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right
- which minimizes the sum of all numbers along its path.
+import com.zsp1987.leetcode.annotation.LeetCode;
 
- Note: You can only move either down or right at any point in time.
- */
-
+@LeetCode(64)
 public class MinimumPathSum {
 	public int minPathSum(int[][] grid) {
 		int minSum = 0;
@@ -26,12 +22,9 @@ public class MinimumPathSum {
 		}
 		for (int i = 1; i < m; i++) {
 			for (int j = 1; j < n; j++) {
-				temp[i][j] = Math.min(temp[i - 1][j] + grid[i][j],
-						temp[i][j - 1] + grid[i][j]);
+				temp[i][j] = Math.min(temp[i - 1][j] + grid[i][j], temp[i][j - 1] + grid[i][j]);
 			}
 		}
 		return temp[m - 1][n - 1];
 	}
 }
-
-// 跟unique path的�?路是一样一样的

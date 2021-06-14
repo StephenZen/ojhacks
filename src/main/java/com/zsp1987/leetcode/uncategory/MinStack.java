@@ -1,17 +1,14 @@
 package com.zsp1987.leetcode.uncategory;
 
-/*
- Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-
- push(x) -- Push element x onto stack.
- pop() -- Removes the element on top of the stack.
- top() -- Get the top element.
- getMin() -- Retrieve the minimum element in the stack.
-
- */
-
 import java.util.ArrayList;
 
+/**
+ * Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+ * 
+ * push(x) -- Push element x onto stack. pop() -- Removes the element on top of the stack. top() --
+ * Get the top element. getMin() -- Retrieve the minimum element in the stack.
+ * 
+ */
 public class MinStack {
 
 	ArrayList<Integer> stack = new ArrayList<Integer>();
@@ -49,5 +46,5 @@ public class MinStack {
 
 }
 
-// 两个栈�?�时维护
-// 一个维护正常值 一个维护最�?值
+// 两个栈�?�时维护
+// 一个维护正常值 一个维护最�?值

@@ -1,5 +1,8 @@
-### Eclipse ###
+### VSCode ###
+.vscode/
 
+
+### Eclipse ###
 .metadata
 bin/
 tmp/

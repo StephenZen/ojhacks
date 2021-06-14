@@ -1,10 +1,8 @@
 package com.zsp1987.leetcode.linkedlist;
 
-import com.zsp1987.leetcode.datatype.ListNode;
+import com.zsp1987.leetcode.annotation.LeetCode;
 
-/*
- Reverse a singly linked list.
- */
+@LeetCode(206)
 public class ReverseLinkedList {
 
 	// iteratively
@@ -39,5 +37,23 @@ public class ReverseLinkedList {
 			head.next = null;
 		}
 		return head;
+	}
+
+
+
+	public class ListNode {
+		int val;
+		ListNode next;
+
+		ListNode() {}
+
+		ListNode(int val) {
+			this.val = val;
+		}
+
+		ListNode(int val, ListNode next) {
+			this.val = val;
+			this.next = next;
+		}
 	}
 }
